@@ -10,13 +10,15 @@ public class UsoPareja {
 		/* LO MAS IMPORTANTE DE ESTE EJEMPLO:
 		 * Cuando ponemos pareja1. y buscamos el set en el menu desplegable, podemos ver que Eclipse
 		 * ya ha puesto que el set recibe como valor String nuevoValor, aunque nosotros lo hayamos puesto
-		 * como T nuevoValor. ¿Por que? Porque en la instancia de arriba hemos definido que sera String
+		 * como T nuevoValor. ï¿½Por que? Porque en la instancia de arriba hemos definido que sera String
 		 */
+	
 		pareja1.setPrimero("Laura");
 		System.out.println(pareja1.getPrimero());
 		
 		// Vamos a comprobar que con la clase Persona tambien funciona
 		Persona pers1 = new Persona("Maarten");
+		
 		Pareja<Persona> pareja2 = new Pareja<Persona>();
 		pareja2.setPrimero(pers1);
 		System.out.println(pareja2.getPrimero().getNombre());
